@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Tribute Page</title>
 </head>
+<link rel="stylesheet" type="text/css" href="Micro.css">
 <body>
 <h1>Hello World, We are Software Developers</h1>
 <!DOCTYPE html>
@@ -17,21 +18,21 @@
 <link rel="stylesheet" type="text/css" href="form.css">
 <body>
 	<header>
-		<h1>freeCodecamp Survey Form</h1>
-		<p style="font-style: italic;">Thank you for taking the time to help us inprove this platform</p>
+		<h1 id="title">freeCodecamp Survey Form</h1>
+		<p id="description" style="font-style: italic;">Thank you for taking the time to help us inprove this platform</p>
 	</header>
 
-<form>
+<form id="survey-form">
 	<div class="form groupss">
 		<div class="labels">
-	<label for="name">Name:</label></div>
+	<label id="name" for="name">Name:</label></div>
 	<div class="fields">
 	<input type="text" for="name" name="name-label" class="input-fields" placeholder="Enter name here..." required>
 </div>
 </div>
 <div class="form groups">
 	<div class="labels">
-	<label for="email">Email:</label></div>
+	<label id="email" for="email">Email:</la bel></div>
 	<div class="fields">
 	<input type="text" id="email" name="email-label" class="input-fields" placeholder="Enter Email here..." required>
 </div>
@@ -40,18 +41,18 @@
 <div class="form group">
 	<label id="number-label" for="number">Age: <span class="clue">(Optional)</span></label></div>
 	<div class="fields">
-	<input type="number" name="age" id="number" min="9" max="99" class="form-control" placeholder="your age..." required>
+	<input type="number" name="age" id="number" min="12" max="99" class="form-control" placeholder="your age..." required>
 </div>
 <br>
 <div class="form groups">
 		<p>Which Option Best Describes Your Current Role</p>
 		<select id="dropdown" name="role" class="input-fields" required>
 			<option disabled selected value>select current role</option>
-			<option id="current">Student</option>
-			<option id="current">Full time Worker</option>
-			<option id="current">Full time Learner</option>
-			<option id="current">I prefer not to speak</option>
-			<option id="current">Other</option>
+			<option id="dropdown">Student</option>
+			<option id="dropdown">Full time Worker</option>
+			<option id="dropdown">Full time Learner</option>
+			<option id="dropdown">I prefer not to speak</option>
+			<option id="dropdown">Other</option>
 		</select>
 	</p>
 </div>
